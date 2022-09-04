@@ -1,0 +1,76 @@
+[
+    {
+        "members": [
+            {
+                "name": "low",
+                "offset": 0,
+                "type": "felt"
+            },
+            {
+                "name": "high",
+                "offset": 1,
+                "type": "felt"
+            }
+        ],
+        "name": "Uint256",
+        "size": 2,
+        "type": "struct"
+    },
+    {
+        "inputs": [],
+        "name": "constructor",
+        "outputs": [],
+        "type": "constructor"
+    },
+    {
+        "inputs": [
+            {
+                "name": "player_address",
+                "type": "felt"
+            },
+            {
+                "name": "player_score",
+                "type": "Uint256"
+            }
+        ],
+        "name": "setScore",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "player1Address",
+                "type": "felt"
+            },
+            {
+                "name": "player2Address",
+                "type": "felt"
+            },
+            {
+                "name": "winnerAddress",
+                "type": "felt"
+            }
+        ],
+        "name": "recordResult",
+        "outputs": [],
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "name": "player_address",
+                "type": "felt"
+            }
+        ],
+        "name": "getScore",
+        "outputs": [
+            {
+                "name": "score",
+                "type": "Uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]

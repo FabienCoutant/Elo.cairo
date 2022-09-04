@@ -1,0 +1,23 @@
+{
+  "name": "elo.cairo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FabienCoutant/Elo.cairo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FabienCoutant/Elo.cairo/issues"
+  },
+  "homepage": "https://github.com/FabienCoutant/Elo.cairo#readme"
+}

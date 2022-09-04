@@ -5,6 +5,9 @@ protostar_version = "0.3.2"
 libs_path = "lib"
 
 ["protostar.contracts"]
-main = [
-    "src/main.cairo",
+EloTest = [
+    "src/EloTest.cairo",
+]
+Elo = [
+    "src/Elo/library.cairo",
 ]
