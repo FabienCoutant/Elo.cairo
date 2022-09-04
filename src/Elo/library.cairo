@@ -4,7 +4,7 @@ from starkware.cairo.common.cairo_builtins import HashBuiltin
 from starkware.cairo.common.uint256 import (Uint256, uint256_lt, uint256_add)
 from starkware.cairo.common.bool import TRUE, FALSE
 from starkware.cairo.common.math_cmp import (is_nn, is_le)
-from starkware.cairo.common.math import (abs_value,assert_lt)
+from starkware.cairo.common.math import (abs_value,assert_lt, assert_not_equal)
 
 
 #
@@ -12,7 +12,7 @@ from starkware.cairo.common.math import (abs_value,assert_lt)
 #
 
 @event
-func EloScoreUpdate(player: felt, newScore: Uint256):
+func EloScoreUpdate(player: felt, newScore: felt):
 end
 
 #
@@ -46,24 +46,33 @@ namespace ELO:
     #
     # Setters
     #
-    func recordResult{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}(player1Address: felt, player2Address: felt, winnerAddress:felt) -> ():
+    func recordResult{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}(playerA_Address: felt, playerB_Address: felt, winner_Address:felt) -> ():
         alloc_locals
 
-        let(player1Score) = getScore(player1Address)
-        let(player2Score) = getScore(player2Address)
 
-        let (resultA) = _getResultSide(player1Address,player2Address, winnerAddress)
-        
-        let diff = player1Score.low - player2Score.low
-        let (changeA, changeB) = _getScoreChange(diff, resultA)
-        
-        let newPlayerAScore = player1Score.low + changeA
-        setScore(player1Address, Uint256(newPlayerAScore,0))
-        EloScoreUpdate.emit(player1Address,Uint256(newPlayerAScore,0))
+        let(playerA_Score) = getScore(playerA_Address)
+        let(playerB_Score) = getScore(playerB_Address)
 
-        let newPlayerBScore = player2Score.low + changeB
-        setScore(player2Address, Uint256(newPlayerBScore,0))
-        EloScoreUpdate.emit(player2Address,Uint256(newPlayerBScore,0))
+        let (resultA) = _getResultSideForA(playerA_Address,playerB_Address, winner_Address)
+        
+        let delta = playerA_Score.low - playerB_Score.low
+        let (changeA, changeB) = _getScoreChange(delta, resultA)
+        
+        # update PlayerA_Score
+        let newPlayerA_Score = playerA_Score.low + changeA
+        setScore(playerA_Address, Uint256(newPlayerA_Score,0))
+
+        #emit event with new PlayerA_Score
+        let (updated_PlayerA_Score) = getScore(playerA_Address)
+        EloScoreUpdate.emit(playerA_Address,updated_PlayerA_Score.low)
+
+        # update PlayerB_Score
+        let newPlayerB_Score = playerB_Score.low + changeB
+        setScore(playerB_Address, Uint256(newPlayerB_Score,0))
+        
+        #emit event with new PlayerB_Score
+        let (updatedPlayerB_Score) = getScore(playerB_Address)
+        EloScoreUpdate.emit(playerB_Address,updatedPlayerB_Score.low)
 
         return()
     end
@@ -78,88 +87,106 @@ namespace ELO:
         ELO_scores.write(player_address, Score(player_score))
         return()
     end
+
 end
 
 
-func _getResultSide{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}(player1Address: felt, player2Address: felt, winnerAddress:felt) -> (resultA: felt):
-    if winnerAddress == player2Address:
+# 0 = lose | 1 = draw | 2 = win
+func _getResultSideForA{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}(playerA_Address: felt, playerB_Address: felt, winner_Address:felt) -> (resultA: felt):
+    if winner_Address == playerB_Address:
         return(0)
     end
-    if winnerAddress == player1Address:
+    if winner_Address == playerA_Address:
         return(2)
     end
     return(1)
 end 
 
-func _getScoreChange{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}(difference: felt, resultA: felt) -> (changeValueA: felt, changeValueB:felt):
-    alloc_locals
-    let (is_diff_positive) = is_nn(difference)
-    let (diff) = abs_value(difference)
 
-    let (scoreChange) = _getScoreDiff(diff)
+#  Table based expectation formula
+#  E = 1 / ( 1 + 10**((difference)/400))
+#  Table calculated based on inverse: difference = (400*log(1/E-1))/(log(10))
+#  scoreChange = Round( K * (result - E) )
+#  K = 20
+#  Because curve is mirrored around 0, uses only one table for positive side
+#  Returns (scoreChangeA, scoreChangeB)     
+func _getScoreChange{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}(delta: felt, resultA: felt) -> (scoreChangeA: felt, scoreChangeB:felt):
+    alloc_locals
+
+    let (is_delta_positive) = is_nn(delta)
+    let (abs_delta) = abs_value(delta)
+
+    let (scoreChange) = _getScoreChangeFromDelta(abs_delta)
+
+    # Depending on result (win/draw/lose), calculate score changes
+    #Win
     if resultA == 2 :
-        let inter = 20 - scoreChange
-        if is_diff_positive == TRUE:
+        local inter = 20 - scoreChange
+        if is_delta_positive == TRUE:
             return(inter, -scoreChange)
         end
         return(scoreChange, -inter)
     end
-        if resultA == 1 :
-        let inter1 = 10 - scoreChange
-        let inter2 = scoreChange - 10
-        if is_diff_positive == TRUE:
-            return(inter1, -inter1)
+
+    #Draw
+    if resultA == 1 :
+        if is_delta_positive == TRUE:
+            local inter = 10 - scoreChange
+            return(inter, -inter)
         end
-        return(inter2, -inter2)
+        local inter = scoreChange - 10
+        return(inter, -inter)
     end
-    let inter = scoreChange - 20
-    if is_diff_positive == TRUE:
+
+    #Lose
+    local inter = scoreChange - 20
+    if is_delta_positive == TRUE:
         return(inter, scoreChange)
     end
     return(-scoreChange, -inter)
 end
 
-func _getScoreDiff{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}(difference: felt)->(scoreChange:felt):
-    let (is_sup) = is_le(636,difference)
+func _getScoreChangeFromDelta{syscall_ptr : felt*, pedersen_ptr : HashBuiltin*, range_check_ptr}(abs_delta: felt)->(scoreChange:felt):
+    let (is_sup) = is_le(636,abs_delta)
     if is_sup == TRUE:
         return(20)
     end
-    let (is_sup) = is_le(436,difference)
+    let (is_sup) = is_le(436,abs_delta)
         if is_sup == TRUE:
         return(19)
     end
-    let (is_sup) = is_le(338,difference)
+    let (is_sup) = is_le(338,abs_delta)
     if is_sup == TRUE:
         return(18)
     end
     
-    let (is_sup) = is_le(269,difference)
+    let (is_sup) = is_le(269,abs_delta)
     if is_sup == TRUE:
         return(17)
     end
-    let (is_sup) = is_le(214,difference)
+    let (is_sup) = is_le(214,abs_delta)
         if is_sup == TRUE:
         return(16)
     end
-    let (is_sup) = is_le(168,difference)
+    let (is_sup) = is_le(168,abs_delta)
     if is_sup == TRUE:
         return(15)
     end
-    let (is_sup) = is_le(126,difference)
+    let (is_sup) = is_le(126,abs_delta)
         if is_sup == TRUE:
         return(14)
     end
-    let (is_sup) = is_le(88,difference)
+    let (is_sup) = is_le(88,abs_delta)
         if is_sup == TRUE:
         return(13)
     end
-    let (is_sup) = is_le(52,difference)
+    let (is_sup) = is_le(52,abs_delta)
         if is_sup == TRUE:
         return(12)
     end
-    let (is_sup) = is_le(17,difference)
+    let (is_sup) = is_le(17,abs_delta)
         if is_sup == TRUE:
         return(11)
     end
-        return(10)
+    return(10)
 end

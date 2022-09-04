@@ -24,7 +24,7 @@
             },
             {
                 "name": "newScore",
-                "type": "Uint256"
+                "type": "felt"
             }
         ],
         "keys": [],
@@ -55,15 +55,15 @@
     {
         "inputs": [
             {
-                "name": "player1Address",
+                "name": "playerA_Address",
                 "type": "felt"
             },
             {
-                "name": "player2Address",
+                "name": "playerB_Address",
                 "type": "felt"
             },
             {
-                "name": "winnerAddress",
+                "name": "winner_Address",
                 "type": "felt"
             }
         ],
