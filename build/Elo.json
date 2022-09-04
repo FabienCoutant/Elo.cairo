@@ -1,5 +1,38 @@
 {
-    "abi": [],
+    "abi": [
+        {
+            "members": [
+                {
+                    "name": "low",
+                    "offset": 0,
+                    "type": "felt"
+                },
+                {
+                    "name": "high",
+                    "offset": 1,
+                    "type": "felt"
+                }
+            ],
+            "name": "Uint256",
+            "size": 2,
+            "type": "struct"
+        },
+        {
+            "data": [
+                {
+                    "name": "player",
+                    "type": "felt"
+                },
+                {
+                    "name": "newScore",
+                    "type": "Uint256"
+                }
+            ],
+            "keys": [],
+            "name": "EloScoreUpdate",
+            "type": "event"
+        }
+    ],
     "entry_points_by_type": {
         "CONSTRUCTOR": [],
         "EXTERNAL": [],
@@ -694,6 +727,45 @@
             },
             "__main__.ELO_scores.storage_write": {
                 "destination": "starkware.starknet.common.syscalls.storage_write",
+                "type": "alias"
+            },
+            "__main__.EloScoreUpdate": {
+                "type": "namespace"
+            },
+            "__main__.EloScoreUpdate.Args": {
+                "full_name": "__main__.EloScoreUpdate.Args",
+                "members": {},
+                "size": 0,
+                "type": "struct"
+            },
+            "__main__.EloScoreUpdate.ImplicitArgs": {
+                "full_name": "__main__.EloScoreUpdate.ImplicitArgs",
+                "members": {},
+                "size": 0,
+                "type": "struct"
+            },
+            "__main__.EloScoreUpdate.Return": {
+                "cairo_type": "()",
+                "type": "type_definition"
+            },
+            "__main__.EloScoreUpdate.SELECTOR": {
+                "type": "const",
+                "value": 543740022535399579071770979914122333777274466720611331981518379042495913945
+            },
+            "__main__.EloScoreUpdate.SIZEOF_LOCALS": {
+                "type": "const",
+                "value": 0
+            },
+            "__main__.EloScoreUpdate.alloc": {
+                "destination": "starkware.cairo.common.alloc.alloc",
+                "type": "alias"
+            },
+            "__main__.EloScoreUpdate.emit_event": {
+                "destination": "starkware.starknet.common.syscalls.emit_event",
+                "type": "alias"
+            },
+            "__main__.EloScoreUpdate.memcpy": {
+                "destination": "starkware.cairo.common.memcpy.memcpy",
                 "type": "alias"
             },
             "__main__.FALSE": {

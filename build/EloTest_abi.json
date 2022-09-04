@@ -17,6 +17,21 @@
         "type": "struct"
     },
     {
+        "data": [
+            {
+                "name": "player",
+                "type": "felt"
+            },
+            {
+                "name": "newScore",
+                "type": "Uint256"
+            }
+        ],
+        "keys": [],
+        "name": "EloScoreUpdate",
+        "type": "event"
+    },
+    {
         "inputs": [],
         "name": "constructor",
         "outputs": [],

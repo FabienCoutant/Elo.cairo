@@ -7,14 +7,22 @@ from starkware.cairo.common.math_cmp import (is_nn, is_le)
 from starkware.cairo.common.math import (abs_value,assert_lt)
 
 
+#
+# Events
+#
 
-struct Score:
-    member score: Uint256
+@event
+func EloScoreUpdate(player: felt, newScore: Uint256):
 end
 
 #
 # Storage
 #
+
+struct Score:
+    member score: Uint256
+end
+
 @storage_var
 func ELO_scores(player_address: felt) -> (player_score: Score):
 end
@@ -51,9 +59,12 @@ namespace ELO:
         
         let newPlayerAScore = player1Score.low + changeA
         setScore(player1Address, Uint256(newPlayerAScore,0))
-        
+        EloScoreUpdate.emit(player1Address,Uint256(newPlayerAScore,0))
+
         let newPlayerBScore = player2Score.low + changeB
         setScore(player2Address, Uint256(newPlayerBScore,0))
+        EloScoreUpdate.emit(player2Address,Uint256(newPlayerBScore,0))
+
         return()
     end
 

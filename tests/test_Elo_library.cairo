@@ -83,6 +83,10 @@ func test_recordResult_with_playerA_as_winner{syscall_ptr : felt*, range_check_p
 
     EloTestingContract.recordResult(contract_address=contract_address, player1Address=contract_address, player2Address=sender_address, winnerAddress=contract_address)
 
+    %{ 
+        expect_events({"name": "EloScoreUpdate", "player": ids.contract_address, "newScore": 110})
+        expect_events({"name": "EloScoreUpdate", "player": ids.sender_address, "newScore": 100}) 
+     %}
 
     let (playerA_score_after) = EloTestingContract.getScore(contract_address=contract_address, player_address=contract_address)
     let (playerB_score_after) = EloTestingContract.getScore(contract_address=contract_address, player_address=sender_address)
