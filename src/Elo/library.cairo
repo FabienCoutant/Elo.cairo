@@ -50,6 +50,7 @@ namespace ELO {
     // Setters
     //
 
+    // The algo is base on https://en.wikipedia.org/wiki/Elo_rating_system#Mathematical_details
     func recordResult{syscall_ptr: felt*, pedersen_ptr: HashBuiltin*, range_check_ptr}(
         playerA_Address: felt, playerB_Address: felt, winner_Address: felt
     ) -> () {
@@ -64,7 +65,7 @@ namespace ELO {
         let (changeB) = _getExpectedScore(playerA_Score, playerB_Score);
 
          // update PlayerA_Score
-        let newPlayerA_Score = Math64x61.toUint256(Math64x61.toFelt(Math64x61.add(Math64x61.fromUint256(playerA_Score),Math64x61.mul(Math64x61.fromFelt(20),Math64x61.sub(resultA, changeA)))));
+        let (newPlayerA_Score,) = _getNewScore(playerA_Score,20,resultA,changeA);
         setScore(playerA_Address, newPlayerA_Score);
 
         // emit event with new PlayerA_Score
@@ -72,7 +73,7 @@ namespace ELO {
         EloScoreUpdate.emit(playerA_Address, updated_PlayerA_Score.low);
 
         // update PlayerB_Score
-        let newPlayerB_Score = Math64x61.toUint256(Math64x61.toFelt(Math64x61.add(Math64x61.fromUint256(playerB_Score),Math64x61.mul(Math64x61.fromFelt(20),Math64x61.sub(resultB, changeB)))));
+        let (newPlayerB_Score,) =  _getNewScore(playerB_Score,20,resultB,changeB);
         setScore(playerB_Address, newPlayerB_Score);
         
         // emit event with new PlayerB_Score
@@ -110,11 +111,13 @@ func _getResultSide{syscall_ptr: felt*, pedersen_ptr: HashBuiltin*, range_check_
     return (drawValue, drawValue,);
 }
 
+// The ExpectedScore formula is:
+// E = 1 / ( 1 + 10**((difference)/400))
 func _getExpectedScore{syscall_ptr: felt*, pedersen_ptr: HashBuiltin*, range_check_ptr}(
-    valueA: Uint256, valueB: Uint256
+    otherPlayerScore: Uint256, playerScore: Uint256
 ) -> (expectedScore: felt) {
     alloc_locals;
-    let valueDiff = Math64x61.sub(Math64x61.fromUint256(valueA),Math64x61.fromUint256(valueB));
+    let valueDiff = Math64x61.sub(Math64x61.fromUint256(otherPlayerScore),Math64x61.fromUint256(playerScore));
     let abs_diff = abs_value(valueDiff);
     let diff_sign = sign(valueDiff);
     let powValue = Math64x61.pow(Math64x61.fromFelt(10),Math64x61.div(Math64x61.fromFelt(abs_diff),Math64x61.fromFelt(400))*diff_sign);
@@ -122,3 +125,10 @@ func _getExpectedScore{syscall_ptr: felt*, pedersen_ptr: HashBuiltin*, range_che
     return (expectedScore,);
 }
 
+func _getNewScore{syscall_ptr: felt*, pedersen_ptr: HashBuiltin*, range_check_ptr}(
+    current_player_Score: Uint256, K_factor: felt, player_Result: felt, expected_change: felt
+) -> (newScore_uint: Uint256) {
+    let newScore = Math64x61.add(Math64x61.fromUint256(current_player_Score),Math64x61.mul(Math64x61.fromFelt(K_factor),Math64x61.sub(player_Result, expected_change)));
+    let newScore_uint = Math64x61.toUint256(Math64x61.toFelt(newScore));
+    return(newScore_uint,);
+}

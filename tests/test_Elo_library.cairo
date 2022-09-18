@@ -36,7 +36,6 @@ func __setup__{syscall_ptr: felt*, range_check_ptr}() {
     return ();
 }
 
-
 @external
 func test_init_score_equal_100{syscall_ptr: felt*, range_check_ptr}() {
     alloc_locals;
@@ -53,7 +52,6 @@ func test_init_score_equal_100{syscall_ptr: felt*, range_check_ptr}() {
     }
     return ();
 }
-
 
 @external
 func test_recordResult_with_player_A_as_winner{syscall_ptr: felt*, range_check_ptr}() {
