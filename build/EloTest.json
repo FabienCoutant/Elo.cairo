@@ -93,21 +93,21 @@
     "entry_points_by_type": {
         "CONSTRUCTOR": [
             {
-                "offset": "0x4a8",
+                "offset": "0x4b3",
                 "selector": "0x28ffe4ff0f226a9107253e17a904099aa4f63a02a5621de0576e5aa71bc5194"
             }
         ],
         "EXTERNAL": [
             {
-                "offset": "0x4c0",
+                "offset": "0x4cb",
                 "selector": "0x1b4bb21b16fe324dd4ba4297aa6c4f0cb81a5437234263f30271162ebdb6fe4"
             },
             {
-                "offset": "0x502",
+                "offset": "0x50d",
                 "selector": "0x29e78b30baf0cfa690d0255e7daa71d9d3ee20689bf28968407aa31a4f1a182"
             },
             {
-                "offset": "0x4dd",
+                "offset": "0x4e8",
                 "selector": "0x35236cd5130e8e830b96692ea5eea9bc98a43adaed9f641aff0f21307a04b16"
             }
         ],
@@ -1275,39 +1275,50 @@
             "0x48127ffc7fff8000",
             "0x48127ffc7fff8000",
             "0x208b7fff7fff7ffe",
+            "0x480a7ff67fff8000",
+            "0x480a7ff77fff8000",
             "0x480a7ff87fff8000",
+            "0x480a7ffb7fff8000",
+            "0x480a7ffc7fff8000",
+            "0x480a7ffd7fff8000",
+            "0x1104800180018000",
+            "0x14",
+            "0x48127ffe7fff8000",
             "0x480a7ff97fff8000",
             "0x480a7ffa7fff8000",
             "0x1104800180018000",
-            "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffcef",
-            "0x48127ffe7fff8000",
+            "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffce7",
+            "0x48127fe27fff8000",
+            "0x1104800180018000",
+            "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffceb",
+            "0x1104800180018000",
+            "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffcc5",
+            "0x1104800180018000",
+            "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffcdc",
+            "0x48127f987fff8000",
+            "0x48127f987fff8000",
+            "0x48127ff87fff8000",
+            "0x48127ffb7fff8000",
+            "0x48127ffb7fff8000",
+            "0x208b7fff7fff7ffe",
+            "0x480a7ffa7fff8000",
             "0x480a7ffb7fff8000",
             "0x1104800180018000",
-            "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffcd9",
+            "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffcc4",
             "0x48127ffe7fff8000",
             "0x480a7ffc7fff8000",
             "0x480a7ffd7fff8000",
             "0x1104800180018000",
-            "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffcf3",
+            "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffcde",
             "0x48127ffe7fff8000",
             "0x48127fe17fff8000",
             "0x48127ffd7fff8000",
             "0x1104800180018000",
-            "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffcf4",
-            "0x48127ffe7fff8000",
-            "0x48127f877fff8000",
-            "0x48127ffd7fff8000",
-            "0x1104800180018000",
-            "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffce3",
-            "0x1104800180018000",
-            "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffcbd",
-            "0x1104800180018000",
-            "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffcd4",
-            "0x480a7ff67fff8000",
-            "0x480a7ff77fff8000",
-            "0x48127ff87fff8000",
-            "0x48127ffb7fff8000",
-            "0x48127ffb7fff8000",
+            "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffcdf",
+            "0x480a7ff87fff8000",
+            "0x480a7ff97fff8000",
+            "0x48127ffc7fff8000",
+            "0x48127ffc7fff8000",
             "0x208b7fff7fff7ffe",
             "0x480a7ffb7fff8000",
             "0x480a7ffc7fff8000",
@@ -1335,7 +1346,7 @@
             "0x480a7ffc7fff8000",
             "0x480a7ffd7fff8000",
             "0x1104800180018000",
-            "0x800000000000010ffffffffffffffffffffffffffffffffffffffffffffff24",
+            "0x800000000000010ffffffffffffffffffffffffffffffffffffffffffffff19",
             "0x208b7fff7fff7ffe",
             "0x482680017ffd8000",
             "0x3",
@@ -1364,7 +1375,7 @@
             "0x480a7ffc7fff8000",
             "0x480a7ffd7fff8000",
             "0x1104800180018000",
-            "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffe9b",
+            "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffe90",
             "0x208b7fff7fff7ffe",
             "0x482680017ffd8000",
             "0x3",
@@ -1391,7 +1402,7 @@
             "0x480a7ffc7fff8000",
             "0x480a7ffd7fff8000",
             "0x1104800180018000",
-            "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffe60",
+            "0x800000000000010fffffffffffffffffffffffffffffffffffffffffffffe55",
             "0x208b7fff7fff7ffe",
             "0x40780017fff7fff",
             "0x1",
@@ -1842,7 +1853,7 @@
                     }
                 }
             ],
-            "1198": [
+            "1209": [
                 {
                     "accessible_scopes": [
                         "__main__",
@@ -1853,21 +1864,21 @@
                     "code": "memory[ap] = segments.add()",
                     "flow_tracking_data": {
                         "ap_tracking": {
-                            "group": 67,
+                            "group": 69,
                             "offset": 8
                         },
                         "reference_ids": {
-                            "__wrappers__.constructor.__calldata_actual_size": 519,
-                            "__wrappers__.constructor.__calldata_ptr": 518,
-                            "__wrappers__.constructor.pedersen_ptr": 521,
-                            "__wrappers__.constructor.range_check_ptr": 522,
-                            "__wrappers__.constructor.ret_value": 523,
-                            "__wrappers__.constructor.syscall_ptr": 520
+                            "__wrappers__.constructor.__calldata_actual_size": 530,
+                            "__wrappers__.constructor.__calldata_ptr": 529,
+                            "__wrappers__.constructor.pedersen_ptr": 532,
+                            "__wrappers__.constructor.range_check_ptr": 533,
+                            "__wrappers__.constructor.ret_value": 534,
+                            "__wrappers__.constructor.syscall_ptr": 531
                         }
                     }
                 }
             ],
-            "1227": [
+            "1238": [
                 {
                     "accessible_scopes": [
                         "__main__",
@@ -1878,24 +1889,24 @@
                     "code": "memory[ap] = segments.add()",
                     "flow_tracking_data": {
                         "ap_tracking": {
-                            "group": 69,
+                            "group": 71,
                             "offset": 125
                         },
                         "reference_ids": {
-                            "__wrappers__.setScore.__calldata_actual_size": 542,
-                            "__wrappers__.setScore.__calldata_arg_player_address": 538,
-                            "__wrappers__.setScore.__calldata_arg_player_score": 540,
-                            "__wrappers__.setScore.__calldata_ptr": 541,
-                            "__wrappers__.setScore.__temp55": 543,
-                            "__wrappers__.setScore.pedersen_ptr": 545,
-                            "__wrappers__.setScore.range_check_ptr": 546,
-                            "__wrappers__.setScore.ret_value": 547,
-                            "__wrappers__.setScore.syscall_ptr": 544
+                            "__wrappers__.setScore.__calldata_actual_size": 553,
+                            "__wrappers__.setScore.__calldata_arg_player_address": 549,
+                            "__wrappers__.setScore.__calldata_arg_player_score": 551,
+                            "__wrappers__.setScore.__calldata_ptr": 552,
+                            "__wrappers__.setScore.__temp55": 554,
+                            "__wrappers__.setScore.pedersen_ptr": 556,
+                            "__wrappers__.setScore.range_check_ptr": 557,
+                            "__wrappers__.setScore.ret_value": 558,
+                            "__wrappers__.setScore.syscall_ptr": 555
                         }
                     }
                 }
             ],
-            "1256": [
+            "1267": [
                 {
                     "accessible_scopes": [
                         "__main__",
@@ -1906,25 +1917,25 @@
                     "code": "memory[ap] = segments.add()",
                     "flow_tracking_data": {
                         "ap_tracking": {
-                            "group": 73,
+                            "group": 75,
                             "offset": 0
                         },
                         "reference_ids": {
-                            "__wrappers__.recordResult.__calldata_actual_size": 569,
-                            "__wrappers__.recordResult.__calldata_arg_playerA_Address": 563,
-                            "__wrappers__.recordResult.__calldata_arg_playerB_Address": 565,
-                            "__wrappers__.recordResult.__calldata_arg_winner_Address": 567,
-                            "__wrappers__.recordResult.__calldata_ptr": 568,
-                            "__wrappers__.recordResult.__temp56": 570,
-                            "__wrappers__.recordResult.pedersen_ptr": 572,
-                            "__wrappers__.recordResult.range_check_ptr": 573,
-                            "__wrappers__.recordResult.ret_value": 574,
-                            "__wrappers__.recordResult.syscall_ptr": 571
+                            "__wrappers__.recordResult.__calldata_actual_size": 580,
+                            "__wrappers__.recordResult.__calldata_arg_playerA_Address": 574,
+                            "__wrappers__.recordResult.__calldata_arg_playerB_Address": 576,
+                            "__wrappers__.recordResult.__calldata_arg_winner_Address": 578,
+                            "__wrappers__.recordResult.__calldata_ptr": 579,
+                            "__wrappers__.recordResult.__temp56": 581,
+                            "__wrappers__.recordResult.pedersen_ptr": 583,
+                            "__wrappers__.recordResult.range_check_ptr": 584,
+                            "__wrappers__.recordResult.ret_value": 585,
+                            "__wrappers__.recordResult.syscall_ptr": 582
                         }
                     }
                 }
             ],
-            "1272": [
+            "1283": [
                 {
                     "accessible_scopes": [
                         "__main__",
@@ -1935,12 +1946,12 @@
                     "code": "memory[ap] = segments.add()",
                     "flow_tracking_data": {
                         "ap_tracking": {
-                            "group": 75,
+                            "group": 77,
                             "offset": 0
                         },
                         "reference_ids": {
-                            "__wrappers__.getScore_encode_return.range_check_ptr": 586,
-                            "__wrappers__.getScore_encode_return.ret_value": 585
+                            "__wrappers__.getScore_encode_return.range_check_ptr": 597,
+                            "__wrappers__.getScore_encode_return.ret_value": 596
                         }
                     }
                 }
@@ -1967,7 +1978,7 @@
                 "decorators": [
                     "constructor"
                 ],
-                "pc": 1188,
+                "pc": 1199,
                 "type": "function"
             },
             "__main__.constructor.Args": {
@@ -2009,10 +2020,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 66,
+                            "group": 68,
                             "offset": 0
                         },
-                        "pc": 1188,
+                        "pc": 1199,
                         "value": "[cast(fp + (-4), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                     }
                 ],
@@ -2024,10 +2035,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 66,
+                            "group": 68,
                             "offset": 0
                         },
-                        "pc": 1188,
+                        "pc": 1199,
                         "value": "[cast(fp + (-3), felt*)]"
                     }
                 ],
@@ -2039,10 +2050,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 66,
+                            "group": 68,
                             "offset": 0
                         },
-                        "pc": 1188,
+                        "pc": 1199,
                         "value": "[cast(fp + (-5), felt**)]"
                     }
                 ],
@@ -2052,7 +2063,7 @@
                 "decorators": [
                     "view"
                 ],
-                "pc": 1265,
+                "pc": 1276,
                 "type": "function"
             },
             "__main__.getScore.Args": {
@@ -2099,18 +2110,18 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 74,
+                            "group": 76,
                             "offset": 0
                         },
-                        "pc": 1265,
+                        "pc": 1276,
                         "value": "[cast(fp + (-5), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 74,
+                            "group": 76,
                             "offset": 118
                         },
-                        "pc": 1271,
+                        "pc": 1282,
                         "value": "[cast(ap + (-4), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                     }
                 ],
@@ -2122,10 +2133,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 74,
+                            "group": 76,
                             "offset": 0
                         },
-                        "pc": 1265,
+                        "pc": 1276,
                         "value": "[cast(fp + (-3), felt*)]"
                     }
                 ],
@@ -2137,18 +2148,18 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 74,
+                            "group": 76,
                             "offset": 0
                         },
-                        "pc": 1265,
+                        "pc": 1276,
                         "value": "[cast(fp + (-4), felt*)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 74,
+                            "group": 76,
                             "offset": 118
                         },
-                        "pc": 1271,
+                        "pc": 1282,
                         "value": "[cast(ap + (-3), felt*)]"
                     }
                 ],
@@ -2160,10 +2171,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 74,
+                            "group": 76,
                             "offset": 118
                         },
-                        "pc": 1271,
+                        "pc": 1282,
                         "value": "[cast(ap + (-2), starkware.cairo.common.uint256.Uint256*)]"
                     }
                 ],
@@ -2175,18 +2186,18 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 74,
+                            "group": 76,
                             "offset": 0
                         },
-                        "pc": 1265,
+                        "pc": 1276,
                         "value": "[cast(fp + (-6), felt**)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 74,
+                            "group": 76,
                             "offset": 118
                         },
-                        "pc": 1271,
+                        "pc": 1282,
                         "value": "[cast(ap + (-5), felt**)]"
                     }
                 ],
@@ -2196,7 +2207,7 @@
                 "decorators": [
                     "external"
                 ],
-                "pc": 1236,
+                "pc": 1247,
                 "type": "function"
             },
             "__main__.recordResult.Args": {
@@ -2251,18 +2262,18 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 70,
+                            "group": 72,
                             "offset": 0
                         },
-                        "pc": 1236,
+                        "pc": 1247,
                         "value": "[cast(fp + (-7), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 71,
+                            "group": 73,
                             "offset": 0
                         },
-                        "pc": 1244,
+                        "pc": 1255,
                         "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                     }
                 ],
@@ -2274,10 +2285,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 70,
+                            "group": 72,
                             "offset": 0
                         },
-                        "pc": 1236,
+                        "pc": 1247,
                         "value": "[cast(fp + (-5), felt*)]"
                     }
                 ],
@@ -2289,10 +2300,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 70,
+                            "group": 72,
                             "offset": 0
                         },
-                        "pc": 1236,
+                        "pc": 1247,
                         "value": "[cast(fp + (-4), felt*)]"
                     }
                 ],
@@ -2304,18 +2315,18 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 70,
+                            "group": 72,
                             "offset": 0
                         },
-                        "pc": 1236,
+                        "pc": 1247,
                         "value": "[cast(fp + (-6), felt*)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 71,
+                            "group": 73,
                             "offset": 0
                         },
-                        "pc": 1244,
+                        "pc": 1255,
                         "value": "[cast(ap + (-1), felt*)]"
                     }
                 ],
@@ -2327,18 +2338,18 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 70,
+                            "group": 72,
                             "offset": 0
                         },
-                        "pc": 1236,
+                        "pc": 1247,
                         "value": "[cast(fp + (-8), felt**)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 71,
+                            "group": 73,
                             "offset": 0
                         },
-                        "pc": 1244,
+                        "pc": 1255,
                         "value": "[cast(ap + (-3), felt**)]"
                     }
                 ],
@@ -2350,10 +2361,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 70,
+                            "group": 72,
                             "offset": 0
                         },
-                        "pc": 1236,
+                        "pc": 1247,
                         "value": "[cast(fp + (-3), felt*)]"
                     }
                 ],
@@ -2363,7 +2374,7 @@
                 "decorators": [
                     "external"
                 ],
-                "pc": 1207,
+                "pc": 1218,
                 "type": "function"
             },
             "__main__.setScore.Args": {
@@ -2414,18 +2425,18 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 68,
+                            "group": 70,
                             "offset": 0
                         },
-                        "pc": 1207,
+                        "pc": 1218,
                         "value": "[cast(fp + (-7), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 68,
+                            "group": 70,
                             "offset": 116
                         },
-                        "pc": 1215,
+                        "pc": 1226,
                         "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                     }
                 ],
@@ -2437,10 +2448,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 68,
+                            "group": 70,
                             "offset": 0
                         },
-                        "pc": 1207,
+                        "pc": 1218,
                         "value": "[cast(fp + (-5), felt*)]"
                     }
                 ],
@@ -2452,10 +2463,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 68,
+                            "group": 70,
                             "offset": 0
                         },
-                        "pc": 1207,
+                        "pc": 1218,
                         "value": "[cast(fp + (-4), starkware.cairo.common.uint256.Uint256*)]"
                     }
                 ],
@@ -2467,18 +2478,18 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 68,
+                            "group": 70,
                             "offset": 0
                         },
-                        "pc": 1207,
+                        "pc": 1218,
                         "value": "[cast(fp + (-6), felt*)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 68,
+                            "group": 70,
                             "offset": 116
                         },
-                        "pc": 1215,
+                        "pc": 1226,
                         "value": "[cast(ap + (-1), felt*)]"
                     }
                 ],
@@ -2490,18 +2501,18 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 68,
+                            "group": 70,
                             "offset": 0
                         },
-                        "pc": 1207,
+                        "pc": 1218,
                         "value": "[cast(fp + (-8), felt**)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 68,
+                            "group": 70,
                             "offset": 116
                         },
-                        "pc": 1215,
+                        "pc": 1226,
                         "value": "[cast(ap + (-3), felt**)]"
                     }
                 ],
@@ -2511,7 +2522,7 @@
                 "decorators": [
                     "constructor"
                 ],
-                "pc": 1192,
+                "pc": 1203,
                 "type": "function"
             },
             "__wrappers__.constructor.Args": {
@@ -2540,10 +2551,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 67,
+                            "group": 69,
                             "offset": 0
                         },
-                        "pc": 1192,
+                        "pc": 1203,
                         "value": "cast([fp + (-3)] - [fp + (-3)], felt)"
                     }
                 ],
@@ -2555,10 +2566,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 67,
+                            "group": 69,
                             "offset": 0
                         },
-                        "pc": 1192,
+                        "pc": 1203,
                         "value": "[cast(fp + (-3), felt**)]"
                     }
                 ],
@@ -2574,18 +2585,18 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 67,
+                            "group": 69,
                             "offset": 0
                         },
-                        "pc": 1192,
+                        "pc": 1203,
                         "value": "[cast([fp + (-5)] + 1, starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 67,
+                            "group": 69,
                             "offset": 8
                         },
-                        "pc": 1198,
+                        "pc": 1209,
                         "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                     }
                 ],
@@ -2597,18 +2608,18 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 67,
+                            "group": 69,
                             "offset": 0
                         },
-                        "pc": 1192,
+                        "pc": 1203,
                         "value": "[cast([fp + (-5)] + 2, felt*)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 67,
+                            "group": 69,
                             "offset": 8
                         },
-                        "pc": 1198,
+                        "pc": 1209,
                         "value": "[cast(ap + (-1), felt*)]"
                     }
                 ],
@@ -2620,10 +2631,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 67,
+                            "group": 69,
                             "offset": 8
                         },
-                        "pc": 1198,
+                        "pc": 1209,
                         "value": "[cast(ap + 0, ()*)]"
                     }
                 ],
@@ -2635,10 +2646,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 67,
+                            "group": 69,
                             "offset": 9
                         },
-                        "pc": 1200,
+                        "pc": 1211,
                         "value": "[cast(ap + (-1), felt**)]"
                     }
                 ],
@@ -2650,10 +2661,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 67,
+                            "group": 69,
                             "offset": 9
                         },
-                        "pc": 1200,
+                        "pc": 1211,
                         "value": "cast(0, felt)"
                     }
                 ],
@@ -2665,18 +2676,18 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 67,
+                            "group": 69,
                             "offset": 0
                         },
-                        "pc": 1192,
+                        "pc": 1203,
                         "value": "[cast([fp + (-5)], felt**)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 67,
+                            "group": 69,
                             "offset": 8
                         },
-                        "pc": 1198,
+                        "pc": 1209,
                         "value": "[cast(ap + (-3), felt**)]"
                     }
                 ],
@@ -2690,7 +2701,7 @@
                 "decorators": [
                     "view"
                 ],
-                "pc": 1282,
+                "pc": 1293,
                 "type": "function"
             },
             "__wrappers__.getScore.Args": {
@@ -2719,10 +2730,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 76,
+                            "group": 78,
                             "offset": 0
                         },
-                        "pc": 1282,
+                        "pc": 1293,
                         "value": "cast([fp + (-3)] + 1 - [fp + (-3)], felt)"
                     }
                 ],
@@ -2734,10 +2745,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 76,
+                            "group": 78,
                             "offset": 0
                         },
-                        "pc": 1282,
+                        "pc": 1293,
                         "value": "[cast([fp + (-3)], felt*)]"
                     }
                 ],
@@ -2749,18 +2760,18 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 76,
+                            "group": 78,
                             "offset": 0
                         },
-                        "pc": 1282,
+                        "pc": 1293,
                         "value": "[cast(fp + (-3), felt**)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 76,
+                            "group": 78,
                             "offset": 0
                         },
-                        "pc": 1282,
+                        "pc": 1293,
                         "value": "cast([fp + (-3)] + 1, felt*)"
                     }
                 ],
@@ -2772,10 +2783,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 76,
+                            "group": 78,
                             "offset": 1
                         },
-                        "pc": 1284,
+                        "pc": 1295,
                         "value": "[cast(ap + (-1), felt*)]"
                     }
                 ],
@@ -2791,18 +2802,18 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 76,
+                            "group": 78,
                             "offset": 0
                         },
-                        "pc": 1282,
+                        "pc": 1293,
                         "value": "[cast([fp + (-5)] + 1, starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 76,
+                            "group": 78,
                             "offset": 125
                         },
-                        "pc": 1291,
+                        "pc": 1302,
                         "value": "[cast(ap + (-4), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                     }
                 ],
@@ -2814,26 +2825,26 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 76,
+                            "group": 78,
                             "offset": 0
                         },
-                        "pc": 1282,
+                        "pc": 1293,
                         "value": "[cast([fp + (-5)] + 2, felt*)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 76,
+                            "group": 78,
                             "offset": 125
                         },
-                        "pc": 1291,
+                        "pc": 1302,
                         "value": "[cast(ap + (-3), felt*)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 76,
+                            "group": 78,
                             "offset": 133
                         },
-                        "pc": 1294,
+                        "pc": 1305,
                         "value": "[cast(ap + (-3), felt*)]"
                     }
                 ],
@@ -2845,10 +2856,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 76,
+                            "group": 78,
                             "offset": 125
                         },
-                        "pc": 1291,
+                        "pc": 1302,
                         "value": "[cast(ap + (-2), (score: starkware.cairo.common.uint256.Uint256)*)]"
                     }
                 ],
@@ -2860,10 +2871,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 76,
+                            "group": 78,
                             "offset": 133
                         },
-                        "pc": 1294,
+                        "pc": 1305,
                         "value": "[cast(ap + (-1), felt**)]"
                     }
                 ],
@@ -2875,10 +2886,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 76,
+                            "group": 78,
                             "offset": 133
                         },
-                        "pc": 1294,
+                        "pc": 1305,
                         "value": "[cast(ap + (-2), felt*)]"
                     }
                 ],
@@ -2890,18 +2901,18 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 76,
+                            "group": 78,
                             "offset": 0
                         },
-                        "pc": 1282,
+                        "pc": 1293,
                         "value": "[cast([fp + (-5)], felt**)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 76,
+                            "group": 78,
                             "offset": 125
                         },
-                        "pc": 1291,
+                        "pc": 1302,
                         "value": "[cast(ap + (-5), felt**)]"
                     }
                 ],
@@ -2909,7 +2920,7 @@
             },
             "__wrappers__.getScore_encode_return": {
                 "decorators": [],
-                "pc": 1272,
+                "pc": 1283,
                 "type": "function"
             },
             "__wrappers__.getScore_encode_return.Args": {
@@ -2947,18 +2958,18 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 75,
+                            "group": 77,
                             "offset": 1
                         },
-                        "pc": 1274,
+                        "pc": 1285,
                         "value": "[cast(fp, felt**)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 75,
+                            "group": 77,
                             "offset": 1
                         },
-                        "pc": 1276,
+                        "pc": 1287,
                         "value": "cast([fp] + 2, felt*)"
                     }
                 ],
@@ -2970,10 +2981,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 75,
+                            "group": 77,
                             "offset": 1
                         },
-                        "pc": 1274,
+                        "pc": 1285,
                         "value": "[cast(fp, felt**)]"
                     }
                 ],
@@ -2985,10 +2996,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 75,
+                            "group": 77,
                             "offset": 1
                         },
-                        "pc": 1274,
+                        "pc": 1285,
                         "value": "cast(fp + (-5), felt*)"
                     }
                 ],
@@ -3000,10 +3011,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 75,
+                            "group": 77,
                             "offset": 2
                         },
-                        "pc": 1278,
+                        "pc": 1289,
                         "value": "[cast(ap + (-1), felt*)]"
                     }
                 ],
@@ -3019,10 +3030,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 75,
+                            "group": 77,
                             "offset": 0
                         },
-                        "pc": 1272,
+                        "pc": 1283,
                         "value": "[cast(fp + (-3), felt*)]"
                     }
                 ],
@@ -3034,10 +3045,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 75,
+                            "group": 77,
                             "offset": 0
                         },
-                        "pc": 1272,
+                        "pc": 1283,
                         "value": "[cast(fp + (-5), (score: starkware.cairo.common.uint256.Uint256)*)]"
                     }
                 ],
@@ -3047,7 +3058,7 @@
                 "decorators": [
                     "external"
                 ],
-                "pc": 1245,
+                "pc": 1256,
                 "type": "function"
             },
             "__wrappers__.recordResult.Args": {
@@ -3076,10 +3087,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 72,
+                            "group": 74,
                             "offset": 0
                         },
-                        "pc": 1245,
+                        "pc": 1256,
                         "value": "cast([fp + (-3)] + 3 - [fp + (-3)], felt)"
                     }
                 ],
@@ -3091,10 +3102,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 72,
+                            "group": 74,
                             "offset": 0
                         },
-                        "pc": 1245,
+                        "pc": 1256,
                         "value": "[cast([fp + (-3)], felt*)]"
                     }
                 ],
@@ -3106,10 +3117,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 72,
+                            "group": 74,
                             "offset": 0
                         },
-                        "pc": 1245,
+                        "pc": 1256,
                         "value": "[cast([fp + (-3)] + 1, felt*)]"
                     }
                 ],
@@ -3121,10 +3132,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 72,
+                            "group": 74,
                             "offset": 0
                         },
-                        "pc": 1245,
+                        "pc": 1256,
                         "value": "[cast([fp + (-3)] + 2, felt*)]"
                     }
                 ],
@@ -3136,34 +3147,34 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 72,
+                            "group": 74,
                             "offset": 0
                         },
-                        "pc": 1245,
+                        "pc": 1256,
                         "value": "[cast(fp + (-3), felt**)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 72,
+                            "group": 74,
                             "offset": 0
                         },
-                        "pc": 1245,
+                        "pc": 1256,
                         "value": "cast([fp + (-3)] + 1, felt*)"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 72,
+                            "group": 74,
                             "offset": 0
                         },
-                        "pc": 1245,
+                        "pc": 1256,
                         "value": "cast([fp + (-3)] + 2, felt*)"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 72,
+                            "group": 74,
                             "offset": 0
                         },
-                        "pc": 1245,
+                        "pc": 1256,
                         "value": "cast([fp + (-3)] + 3, felt*)"
                     }
                 ],
@@ -3175,10 +3186,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 72,
+                            "group": 74,
                             "offset": 1
                         },
-                        "pc": 1247,
+                        "pc": 1258,
                         "value": "[cast(ap + (-1), felt*)]"
                     }
                 ],
@@ -3194,18 +3205,18 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 72,
+                            "group": 74,
                             "offset": 0
                         },
-                        "pc": 1245,
+                        "pc": 1256,
                         "value": "[cast([fp + (-5)] + 1, starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 73,
+                            "group": 75,
                             "offset": 0
                         },
-                        "pc": 1256,
+                        "pc": 1267,
                         "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                     }
                 ],
@@ -3217,18 +3228,18 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 72,
+                            "group": 74,
                             "offset": 0
                         },
-                        "pc": 1245,
+                        "pc": 1256,
                         "value": "[cast([fp + (-5)] + 2, felt*)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 73,
+                            "group": 75,
                             "offset": 0
                         },
-                        "pc": 1256,
+                        "pc": 1267,
                         "value": "[cast(ap + (-1), felt*)]"
                     }
                 ],
@@ -3240,10 +3251,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 73,
+                            "group": 75,
                             "offset": 0
                         },
-                        "pc": 1256,
+                        "pc": 1267,
                         "value": "[cast(ap + 0, ()*)]"
                     }
                 ],
@@ -3255,10 +3266,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 73,
+                            "group": 75,
                             "offset": 1
                         },
-                        "pc": 1258,
+                        "pc": 1269,
                         "value": "[cast(ap + (-1), felt**)]"
                     }
                 ],
@@ -3270,10 +3281,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 73,
+                            "group": 75,
                             "offset": 1
                         },
-                        "pc": 1258,
+                        "pc": 1269,
                         "value": "cast(0, felt)"
                     }
                 ],
@@ -3285,18 +3296,18 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 72,
+                            "group": 74,
                             "offset": 0
                         },
-                        "pc": 1245,
+                        "pc": 1256,
                         "value": "[cast([fp + (-5)], felt**)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 73,
+                            "group": 75,
                             "offset": 0
                         },
-                        "pc": 1256,
+                        "pc": 1267,
                         "value": "[cast(ap + (-3), felt**)]"
                     }
                 ],
@@ -3310,7 +3321,7 @@
                 "decorators": [
                     "external"
                 ],
-                "pc": 1216,
+                "pc": 1227,
                 "type": "function"
             },
             "__wrappers__.setScore.Args": {
@@ -3339,10 +3350,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 69,
+                            "group": 71,
                             "offset": 0
                         },
-                        "pc": 1216,
+                        "pc": 1227,
                         "value": "cast([fp + (-3)] + 3 - [fp + (-3)], felt)"
                     }
                 ],
@@ -3354,10 +3365,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 69,
+                            "group": 71,
                             "offset": 0
                         },
-                        "pc": 1216,
+                        "pc": 1227,
                         "value": "[cast([fp + (-3)], felt*)]"
                     }
                 ],
@@ -3369,10 +3380,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 69,
+                            "group": 71,
                             "offset": 0
                         },
-                        "pc": 1216,
+                        "pc": 1227,
                         "value": "[cast([fp + (-3)] + 1, starkware.cairo.common.uint256.Uint256*)]"
                     }
                 ],
@@ -3384,26 +3395,26 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 69,
+                            "group": 71,
                             "offset": 0
                         },
-                        "pc": 1216,
+                        "pc": 1227,
                         "value": "[cast(fp + (-3), felt**)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 69,
+                            "group": 71,
                             "offset": 0
                         },
-                        "pc": 1216,
+                        "pc": 1227,
                         "value": "cast([fp + (-3)] + 1, felt*)"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 69,
+                            "group": 71,
                             "offset": 0
                         },
-                        "pc": 1216,
+                        "pc": 1227,
                         "value": "cast([fp + (-3)] + 3, felt*)"
                     }
                 ],
@@ -3415,10 +3426,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 69,
+                            "group": 71,
                             "offset": 1
                         },
-                        "pc": 1218,
+                        "pc": 1229,
                         "value": "[cast(ap + (-1), felt*)]"
                     }
                 ],
@@ -3434,18 +3445,18 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 69,
+                            "group": 71,
                             "offset": 0
                         },
-                        "pc": 1216,
+                        "pc": 1227,
                         "value": "[cast([fp + (-5)] + 1, starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 69,
+                            "group": 71,
                             "offset": 125
                         },
-                        "pc": 1227,
+                        "pc": 1238,
                         "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                     }
                 ],
@@ -3457,18 +3468,18 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 69,
+                            "group": 71,
                             "offset": 0
                         },
-                        "pc": 1216,
+                        "pc": 1227,
                         "value": "[cast([fp + (-5)] + 2, felt*)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 69,
+                            "group": 71,
                             "offset": 125
                         },
-                        "pc": 1227,
+                        "pc": 1238,
                         "value": "[cast(ap + (-1), felt*)]"
                     }
                 ],
@@ -3480,10 +3491,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 69,
+                            "group": 71,
                             "offset": 125
                         },
-                        "pc": 1227,
+                        "pc": 1238,
                         "value": "[cast(ap + 0, ()*)]"
                     }
                 ],
@@ -3495,10 +3506,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 69,
+                            "group": 71,
                             "offset": 126
                         },
-                        "pc": 1229,
+                        "pc": 1240,
                         "value": "[cast(ap + (-1), felt**)]"
                     }
                 ],
@@ -3510,10 +3521,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 69,
+                            "group": 71,
                             "offset": 126
                         },
-                        "pc": 1229,
+                        "pc": 1240,
                         "value": "cast(0, felt)"
                     }
                 ],
@@ -3525,18 +3536,18 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 69,
+                            "group": 71,
                             "offset": 0
                         },
-                        "pc": 1216,
+                        "pc": 1227,
                         "value": "[cast([fp + (-5)], felt**)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 69,
+                            "group": 71,
                             "offset": 125
                         },
-                        "pc": 1227,
+                        "pc": 1238,
                         "value": "[cast(ap + (-3), felt**)]"
                     }
                 ],
@@ -9318,10 +9329,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 65,
-                            "offset": 177
+                            "group": 66,
+                            "offset": 56
                         },
-                        "pc": 1178,
+                        "pc": 1170,
                         "value": "[cast(ap + (-1), felt*)]"
                     }
                 ],
@@ -9333,10 +9344,10 @@
                 "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 65,
-                            "offset": 221
+                            "group": 66,
+                            "offset": 100
                         },
-                        "pc": 1182,
+                        "pc": 1174,
                         "value": "[cast(ap + (-2), starkware.cairo.common.uint256.Uint256*)]"
                     }
                 ],
@@ -9353,6 +9364,14 @@
                         },
                         "pc": 1154,
                         "value": "[cast(fp + (-9), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
+                    },
+                    {
+                        "ap_tracking_data": {
+                            "group": 66,
+                            "offset": 0
+                        },
+                        "pc": 1162,
+                        "value": "[cast(ap + (-3), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                     }
                 ],
                 "type": "reference"
@@ -9386,51 +9405,50 @@
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 65,
+                            "group": 66,
+                            "offset": 0
+                        },
+                        "pc": 1162,
+                        "value": "[cast(ap + (-2), felt*)]"
+                    },
+                    {
+                        "ap_tracking_data": {
+                            "group": 66,
                             "offset": 29
                         },
-                        "pc": 1159,
+                        "pc": 1167,
                         "value": "[cast(ap + (-2), felt*)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 65,
-                            "offset": 53
+                            "group": 66,
+                            "offset": 56
                         },
-                        "pc": 1163,
+                        "pc": 1170,
                         "value": "[cast(ap + (-2), felt*)]"
                     },
                     {
                         "ap_tracking_data": {
-                            "group": 65,
-                            "offset": 82
+                            "group": 66,
+                            "offset": 96
                         },
-                        "pc": 1168,
+                        "pc": 1172,
                         "value": "[cast(ap + (-2), felt*)]"
-                    },
+                    }
+                ],
+                "type": "reference"
+            },
+            "src.Elo.library._getNewScore.scoreVariation": {
+                "cairo_type": "felt",
+                "full_name": "src.Elo.library._getNewScore.scoreVariation",
+                "references": [
                     {
                         "ap_tracking_data": {
-                            "group": 65,
-                            "offset": 148
+                            "group": 66,
+                            "offset": 0
                         },
-                        "pc": 1173,
-                        "value": "[cast(ap + (-2), felt*)]"
-                    },
-                    {
-                        "ap_tracking_data": {
-                            "group": 65,
-                            "offset": 177
-                        },
-                        "pc": 1178,
-                        "value": "[cast(ap + (-2), felt*)]"
-                    },
-                    {
-                        "ap_tracking_data": {
-                            "group": 65,
-                            "offset": 217
-                        },
-                        "pc": 1180,
-                        "value": "[cast(ap + (-2), felt*)]"
+                        "pc": 1162,
+                        "value": "[cast(ap + (-1), felt*)]"
                     }
                 ],
                 "type": "reference"
@@ -9446,6 +9464,14 @@
                         },
                         "pc": 1154,
                         "value": "[cast(fp + (-10), felt**)]"
+                    },
+                    {
+                        "ap_tracking_data": {
+                            "group": 66,
+                            "offset": 0
+                        },
+                        "pc": 1162,
+                        "value": "[cast(ap + (-4), felt**)]"
                     }
                 ],
                 "type": "reference"
@@ -9688,6 +9714,186 @@
                         },
                         "pc": 1025,
                         "value": "[cast(fp + (-3), felt*)]"
+                    }
+                ],
+                "type": "reference"
+            },
+            "src.Elo.library._getScoreVariation": {
+                "decorators": [],
+                "pc": 1180,
+                "type": "function"
+            },
+            "src.Elo.library._getScoreVariation.Args": {
+                "full_name": "src.Elo.library._getScoreVariation.Args",
+                "members": {
+                    "K_factor": {
+                        "cairo_type": "felt",
+                        "offset": 0
+                    },
+                    "expected_change": {
+                        "cairo_type": "felt",
+                        "offset": 2
+                    },
+                    "player_Result": {
+                        "cairo_type": "felt",
+                        "offset": 1
+                    }
+                },
+                "size": 3,
+                "type": "struct"
+            },
+            "src.Elo.library._getScoreVariation.ImplicitArgs": {
+                "full_name": "src.Elo.library._getScoreVariation.ImplicitArgs",
+                "members": {
+                    "pedersen_ptr": {
+                        "cairo_type": "starkware.cairo.common.cairo_builtins.HashBuiltin*",
+                        "offset": 1
+                    },
+                    "range_check_ptr": {
+                        "cairo_type": "felt",
+                        "offset": 2
+                    },
+                    "syscall_ptr": {
+                        "cairo_type": "felt*",
+                        "offset": 0
+                    }
+                },
+                "size": 3,
+                "type": "struct"
+            },
+            "src.Elo.library._getScoreVariation.K_factor": {
+                "cairo_type": "felt",
+                "full_name": "src.Elo.library._getScoreVariation.K_factor",
+                "references": [
+                    {
+                        "ap_tracking_data": {
+                            "group": 67,
+                            "offset": 0
+                        },
+                        "pc": 1180,
+                        "value": "[cast(fp + (-5), felt*)]"
+                    }
+                ],
+                "type": "reference"
+            },
+            "src.Elo.library._getScoreVariation.Return": {
+                "cairo_type": "(scoreVariation: felt)",
+                "type": "type_definition"
+            },
+            "src.Elo.library._getScoreVariation.SIZEOF_LOCALS": {
+                "type": "const",
+                "value": 0
+            },
+            "src.Elo.library._getScoreVariation.expected_change": {
+                "cairo_type": "felt",
+                "full_name": "src.Elo.library._getScoreVariation.expected_change",
+                "references": [
+                    {
+                        "ap_tracking_data": {
+                            "group": 67,
+                            "offset": 0
+                        },
+                        "pc": 1180,
+                        "value": "[cast(fp + (-3), felt*)]"
+                    }
+                ],
+                "type": "reference"
+            },
+            "src.Elo.library._getScoreVariation.pedersen_ptr": {
+                "cairo_type": "starkware.cairo.common.cairo_builtins.HashBuiltin*",
+                "full_name": "src.Elo.library._getScoreVariation.pedersen_ptr",
+                "references": [
+                    {
+                        "ap_tracking_data": {
+                            "group": 67,
+                            "offset": 0
+                        },
+                        "pc": 1180,
+                        "value": "[cast(fp + (-7), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
+                    }
+                ],
+                "type": "reference"
+            },
+            "src.Elo.library._getScoreVariation.player_Result": {
+                "cairo_type": "felt",
+                "full_name": "src.Elo.library._getScoreVariation.player_Result",
+                "references": [
+                    {
+                        "ap_tracking_data": {
+                            "group": 67,
+                            "offset": 0
+                        },
+                        "pc": 1180,
+                        "value": "[cast(fp + (-4), felt*)]"
+                    }
+                ],
+                "type": "reference"
+            },
+            "src.Elo.library._getScoreVariation.range_check_ptr": {
+                "cairo_type": "felt",
+                "full_name": "src.Elo.library._getScoreVariation.range_check_ptr",
+                "references": [
+                    {
+                        "ap_tracking_data": {
+                            "group": 67,
+                            "offset": 0
+                        },
+                        "pc": 1180,
+                        "value": "[cast(fp + (-6), felt*)]"
+                    },
+                    {
+                        "ap_tracking_data": {
+                            "group": 67,
+                            "offset": 24
+                        },
+                        "pc": 1184,
+                        "value": "[cast(ap + (-2), felt*)]"
+                    },
+                    {
+                        "ap_tracking_data": {
+                            "group": 67,
+                            "offset": 53
+                        },
+                        "pc": 1189,
+                        "value": "[cast(ap + (-2), felt*)]"
+                    },
+                    {
+                        "ap_tracking_data": {
+                            "group": 67,
+                            "offset": 119
+                        },
+                        "pc": 1194,
+                        "value": "[cast(ap + (-2), felt*)]"
+                    }
+                ],
+                "type": "reference"
+            },
+            "src.Elo.library._getScoreVariation.scoreVariation": {
+                "cairo_type": "felt",
+                "full_name": "src.Elo.library._getScoreVariation.scoreVariation",
+                "references": [
+                    {
+                        "ap_tracking_data": {
+                            "group": 67,
+                            "offset": 119
+                        },
+                        "pc": 1194,
+                        "value": "[cast(ap + (-1), felt*)]"
+                    }
+                ],
+                "type": "reference"
+            },
+            "src.Elo.library._getScoreVariation.syscall_ptr": {
+                "cairo_type": "felt*",
+                "full_name": "src.Elo.library._getScoreVariation.syscall_ptr",
+                "references": [
+                    {
+                        "ap_tracking_data": {
+                            "group": 67,
+                            "offset": 0
+                        },
+                        "pc": 1180,
+                        "value": "[cast(fp + (-8), felt**)]"
                     }
                 ],
                 "type": "reference"
@@ -17605,826 +17811,914 @@
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 65,
-                        "offset": 29
+                        "group": 66,
+                        "offset": 0
                     },
-                    "pc": 1159,
-                    "value": "[cast(ap + (-2), felt*)]"
-                },
-                {
-                    "ap_tracking_data": {
-                        "group": 65,
-                        "offset": 53
-                    },
-                    "pc": 1163,
-                    "value": "[cast(ap + (-2), felt*)]"
-                },
-                {
-                    "ap_tracking_data": {
-                        "group": 65,
-                        "offset": 82
-                    },
-                    "pc": 1168,
-                    "value": "[cast(ap + (-2), felt*)]"
-                },
-                {
-                    "ap_tracking_data": {
-                        "group": 65,
-                        "offset": 148
-                    },
-                    "pc": 1173,
-                    "value": "[cast(ap + (-2), felt*)]"
-                },
-                {
-                    "ap_tracking_data": {
-                        "group": 65,
-                        "offset": 177
-                    },
-                    "pc": 1178,
-                    "value": "[cast(ap + (-2), felt*)]"
-                },
-                {
-                    "ap_tracking_data": {
-                        "group": 65,
-                        "offset": 177
-                    },
-                    "pc": 1178,
-                    "value": "[cast(ap + (-1), felt*)]"
-                },
-                {
-                    "ap_tracking_data": {
-                        "group": 65,
-                        "offset": 217
-                    },
-                    "pc": 1180,
-                    "value": "[cast(ap + (-2), felt*)]"
-                },
-                {
-                    "ap_tracking_data": {
-                        "group": 65,
-                        "offset": 221
-                    },
-                    "pc": 1182,
-                    "value": "[cast(ap + (-2), starkware.cairo.common.uint256.Uint256*)]"
+                    "pc": 1162,
+                    "value": "[cast(ap + (-4), felt**)]"
                 },
                 {
                     "ap_tracking_data": {
                         "group": 66,
                         "offset": 0
                     },
-                    "pc": 1188,
+                    "pc": 1162,
+                    "value": "[cast(ap + (-3), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 66,
+                        "offset": 0
+                    },
+                    "pc": 1162,
+                    "value": "[cast(ap + (-2), felt*)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 66,
+                        "offset": 0
+                    },
+                    "pc": 1162,
+                    "value": "[cast(ap + (-1), felt*)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 66,
+                        "offset": 29
+                    },
+                    "pc": 1167,
+                    "value": "[cast(ap + (-2), felt*)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 66,
+                        "offset": 56
+                    },
+                    "pc": 1170,
+                    "value": "[cast(ap + (-2), felt*)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 66,
+                        "offset": 56
+                    },
+                    "pc": 1170,
+                    "value": "[cast(ap + (-1), felt*)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 66,
+                        "offset": 96
+                    },
+                    "pc": 1172,
+                    "value": "[cast(ap + (-2), felt*)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 66,
+                        "offset": 100
+                    },
+                    "pc": 1174,
+                    "value": "[cast(ap + (-2), starkware.cairo.common.uint256.Uint256*)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 67,
+                        "offset": 0
+                    },
+                    "pc": 1180,
+                    "value": "[cast(fp + (-5), felt*)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 67,
+                        "offset": 0
+                    },
+                    "pc": 1180,
+                    "value": "[cast(fp + (-4), felt*)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 67,
+                        "offset": 0
+                    },
+                    "pc": 1180,
+                    "value": "[cast(fp + (-3), felt*)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 67,
+                        "offset": 0
+                    },
+                    "pc": 1180,
+                    "value": "[cast(fp + (-8), felt**)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 67,
+                        "offset": 0
+                    },
+                    "pc": 1180,
+                    "value": "[cast(fp + (-7), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 67,
+                        "offset": 0
+                    },
+                    "pc": 1180,
+                    "value": "[cast(fp + (-6), felt*)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 67,
+                        "offset": 24
+                    },
+                    "pc": 1184,
+                    "value": "[cast(ap + (-2), felt*)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 67,
+                        "offset": 53
+                    },
+                    "pc": 1189,
+                    "value": "[cast(ap + (-2), felt*)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 67,
+                        "offset": 119
+                    },
+                    "pc": 1194,
+                    "value": "[cast(ap + (-2), felt*)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 67,
+                        "offset": 119
+                    },
+                    "pc": 1194,
+                    "value": "[cast(ap + (-1), felt*)]"
+                },
+                {
+                    "ap_tracking_data": {
+                        "group": 68,
+                        "offset": 0
+                    },
+                    "pc": 1199,
                     "value": "[cast(fp + (-5), felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 66,
+                        "group": 68,
                         "offset": 0
                     },
-                    "pc": 1188,
+                    "pc": 1199,
                     "value": "[cast(fp + (-4), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 66,
+                        "group": 68,
                         "offset": 0
                     },
-                    "pc": 1188,
+                    "pc": 1199,
                     "value": "[cast(fp + (-3), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 67,
+                        "group": 69,
                         "offset": 0
                     },
-                    "pc": 1192,
+                    "pc": 1203,
                     "value": "[cast([fp + (-5)], felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 67,
+                        "group": 69,
                         "offset": 0
                     },
-                    "pc": 1192,
+                    "pc": 1203,
                     "value": "[cast([fp + (-5)] + 1, starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 67,
+                        "group": 69,
                         "offset": 0
                     },
-                    "pc": 1192,
+                    "pc": 1203,
                     "value": "[cast([fp + (-5)] + 2, felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 67,
+                        "group": 69,
                         "offset": 0
                     },
-                    "pc": 1192,
+                    "pc": 1203,
                     "value": "[cast(fp + (-3), felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 67,
+                        "group": 69,
                         "offset": 0
                     },
-                    "pc": 1192,
+                    "pc": 1203,
                     "value": "cast([fp + (-3)] - [fp + (-3)], felt)"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 67,
+                        "group": 69,
                         "offset": 8
                     },
-                    "pc": 1198,
+                    "pc": 1209,
                     "value": "[cast(ap + (-3), felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 67,
+                        "group": 69,
                         "offset": 8
                     },
-                    "pc": 1198,
+                    "pc": 1209,
                     "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 67,
+                        "group": 69,
                         "offset": 8
                     },
-                    "pc": 1198,
+                    "pc": 1209,
                     "value": "[cast(ap + (-1), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 67,
+                        "group": 69,
                         "offset": 8
                     },
-                    "pc": 1198,
+                    "pc": 1209,
                     "value": "[cast(ap + 0, ()*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 67,
+                        "group": 69,
                         "offset": 9
                     },
-                    "pc": 1200,
+                    "pc": 1211,
                     "value": "[cast(ap + (-1), felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 67,
+                        "group": 69,
                         "offset": 9
                     },
-                    "pc": 1200,
+                    "pc": 1211,
                     "value": "cast(0, felt)"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 68,
+                        "group": 70,
                         "offset": 0
                     },
-                    "pc": 1207,
+                    "pc": 1218,
                     "value": "[cast(fp + (-5), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 68,
+                        "group": 70,
                         "offset": 0
                     },
-                    "pc": 1207,
+                    "pc": 1218,
                     "value": "[cast(fp + (-4), starkware.cairo.common.uint256.Uint256*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 68,
+                        "group": 70,
                         "offset": 0
                     },
-                    "pc": 1207,
+                    "pc": 1218,
                     "value": "[cast(fp + (-8), felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 68,
+                        "group": 70,
                         "offset": 0
                     },
-                    "pc": 1207,
+                    "pc": 1218,
                     "value": "[cast(fp + (-7), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 68,
+                        "group": 70,
                         "offset": 0
                     },
-                    "pc": 1207,
+                    "pc": 1218,
                     "value": "[cast(fp + (-6), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 68,
+                        "group": 70,
                         "offset": 116
                     },
-                    "pc": 1215,
+                    "pc": 1226,
                     "value": "[cast(ap + (-3), felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 68,
+                        "group": 70,
                         "offset": 116
                     },
-                    "pc": 1215,
+                    "pc": 1226,
                     "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 68,
+                        "group": 70,
                         "offset": 116
                     },
-                    "pc": 1215,
+                    "pc": 1226,
                     "value": "[cast(ap + (-1), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 69,
+                        "group": 71,
                         "offset": 0
                     },
-                    "pc": 1216,
+                    "pc": 1227,
                     "value": "[cast([fp + (-5)], felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 69,
+                        "group": 71,
                         "offset": 0
                     },
-                    "pc": 1216,
+                    "pc": 1227,
                     "value": "[cast([fp + (-5)] + 1, starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 69,
+                        "group": 71,
                         "offset": 0
                     },
-                    "pc": 1216,
+                    "pc": 1227,
                     "value": "[cast([fp + (-5)] + 2, felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 69,
+                        "group": 71,
                         "offset": 0
                     },
-                    "pc": 1216,
+                    "pc": 1227,
                     "value": "[cast(fp + (-3), felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 69,
+                        "group": 71,
                         "offset": 0
                     },
-                    "pc": 1216,
+                    "pc": 1227,
                     "value": "[cast([fp + (-3)], felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 69,
+                        "group": 71,
                         "offset": 0
                     },
-                    "pc": 1216,
+                    "pc": 1227,
                     "value": "cast([fp + (-3)] + 1, felt*)"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 69,
+                        "group": 71,
                         "offset": 0
                     },
-                    "pc": 1216,
+                    "pc": 1227,
                     "value": "[cast([fp + (-3)] + 1, starkware.cairo.common.uint256.Uint256*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 69,
+                        "group": 71,
                         "offset": 0
                     },
-                    "pc": 1216,
+                    "pc": 1227,
                     "value": "cast([fp + (-3)] + 3, felt*)"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 69,
+                        "group": 71,
                         "offset": 0
                     },
-                    "pc": 1216,
+                    "pc": 1227,
                     "value": "cast([fp + (-3)] + 3 - [fp + (-3)], felt)"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 69,
+                        "group": 71,
                         "offset": 1
                     },
-                    "pc": 1218,
+                    "pc": 1229,
                     "value": "[cast(ap + (-1), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 69,
+                        "group": 71,
                         "offset": 125
                     },
-                    "pc": 1227,
+                    "pc": 1238,
                     "value": "[cast(ap + (-3), felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 69,
+                        "group": 71,
                         "offset": 125
                     },
-                    "pc": 1227,
+                    "pc": 1238,
                     "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 69,
+                        "group": 71,
                         "offset": 125
                     },
-                    "pc": 1227,
+                    "pc": 1238,
                     "value": "[cast(ap + (-1), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 69,
+                        "group": 71,
                         "offset": 125
                     },
-                    "pc": 1227,
+                    "pc": 1238,
                     "value": "[cast(ap + 0, ()*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 69,
+                        "group": 71,
                         "offset": 126
                     },
-                    "pc": 1229,
+                    "pc": 1240,
                     "value": "[cast(ap + (-1), felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 69,
+                        "group": 71,
                         "offset": 126
                     },
-                    "pc": 1229,
+                    "pc": 1240,
                     "value": "cast(0, felt)"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 70,
+                        "group": 72,
                         "offset": 0
                     },
-                    "pc": 1236,
+                    "pc": 1247,
                     "value": "[cast(fp + (-5), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 70,
+                        "group": 72,
                         "offset": 0
                     },
-                    "pc": 1236,
+                    "pc": 1247,
                     "value": "[cast(fp + (-4), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 70,
+                        "group": 72,
                         "offset": 0
                     },
-                    "pc": 1236,
+                    "pc": 1247,
                     "value": "[cast(fp + (-3), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 70,
+                        "group": 72,
                         "offset": 0
                     },
-                    "pc": 1236,
+                    "pc": 1247,
                     "value": "[cast(fp + (-8), felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 70,
+                        "group": 72,
                         "offset": 0
                     },
-                    "pc": 1236,
+                    "pc": 1247,
                     "value": "[cast(fp + (-7), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 70,
+                        "group": 72,
                         "offset": 0
                     },
-                    "pc": 1236,
+                    "pc": 1247,
                     "value": "[cast(fp + (-6), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 71,
+                        "group": 73,
                         "offset": 0
                     },
-                    "pc": 1244,
+                    "pc": 1255,
                     "value": "[cast(ap + (-3), felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 71,
+                        "group": 73,
                         "offset": 0
                     },
-                    "pc": 1244,
+                    "pc": 1255,
                     "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 71,
+                        "group": 73,
                         "offset": 0
                     },
-                    "pc": 1244,
+                    "pc": 1255,
                     "value": "[cast(ap + (-1), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 72,
+                        "group": 74,
                         "offset": 0
                     },
-                    "pc": 1245,
+                    "pc": 1256,
                     "value": "[cast([fp + (-5)], felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 72,
+                        "group": 74,
                         "offset": 0
                     },
-                    "pc": 1245,
+                    "pc": 1256,
                     "value": "[cast([fp + (-5)] + 1, starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 72,
+                        "group": 74,
                         "offset": 0
                     },
-                    "pc": 1245,
+                    "pc": 1256,
                     "value": "[cast([fp + (-5)] + 2, felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 72,
+                        "group": 74,
                         "offset": 0
                     },
-                    "pc": 1245,
+                    "pc": 1256,
                     "value": "[cast(fp + (-3), felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 72,
+                        "group": 74,
                         "offset": 0
                     },
-                    "pc": 1245,
+                    "pc": 1256,
                     "value": "[cast([fp + (-3)], felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 72,
+                        "group": 74,
                         "offset": 0
                     },
-                    "pc": 1245,
+                    "pc": 1256,
                     "value": "cast([fp + (-3)] + 1, felt*)"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 72,
+                        "group": 74,
                         "offset": 0
                     },
-                    "pc": 1245,
+                    "pc": 1256,
                     "value": "[cast([fp + (-3)] + 1, felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 72,
+                        "group": 74,
                         "offset": 0
                     },
-                    "pc": 1245,
+                    "pc": 1256,
                     "value": "cast([fp + (-3)] + 2, felt*)"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 72,
+                        "group": 74,
                         "offset": 0
                     },
-                    "pc": 1245,
+                    "pc": 1256,
                     "value": "[cast([fp + (-3)] + 2, felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 72,
+                        "group": 74,
                         "offset": 0
                     },
-                    "pc": 1245,
+                    "pc": 1256,
                     "value": "cast([fp + (-3)] + 3, felt*)"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 72,
+                        "group": 74,
                         "offset": 0
                     },
-                    "pc": 1245,
+                    "pc": 1256,
                     "value": "cast([fp + (-3)] + 3 - [fp + (-3)], felt)"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 72,
+                        "group": 74,
                         "offset": 1
                     },
-                    "pc": 1247,
+                    "pc": 1258,
                     "value": "[cast(ap + (-1), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 73,
+                        "group": 75,
                         "offset": 0
                     },
-                    "pc": 1256,
+                    "pc": 1267,
                     "value": "[cast(ap + (-3), felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 73,
+                        "group": 75,
                         "offset": 0
                     },
-                    "pc": 1256,
+                    "pc": 1267,
                     "value": "[cast(ap + (-2), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 73,
+                        "group": 75,
                         "offset": 0
                     },
-                    "pc": 1256,
+                    "pc": 1267,
                     "value": "[cast(ap + (-1), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 73,
+                        "group": 75,
                         "offset": 0
                     },
-                    "pc": 1256,
+                    "pc": 1267,
                     "value": "[cast(ap + 0, ()*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 73,
+                        "group": 75,
                         "offset": 1
                     },
-                    "pc": 1258,
+                    "pc": 1269,
                     "value": "[cast(ap + (-1), felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 73,
+                        "group": 75,
                         "offset": 1
                     },
-                    "pc": 1258,
+                    "pc": 1269,
                     "value": "cast(0, felt)"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 74,
+                        "group": 76,
                         "offset": 0
                     },
-                    "pc": 1265,
+                    "pc": 1276,
                     "value": "[cast(fp + (-3), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 74,
+                        "group": 76,
                         "offset": 0
                     },
-                    "pc": 1265,
+                    "pc": 1276,
                     "value": "[cast(fp + (-6), felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 74,
+                        "group": 76,
                         "offset": 0
                     },
-                    "pc": 1265,
+                    "pc": 1276,
                     "value": "[cast(fp + (-5), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 74,
+                        "group": 76,
                         "offset": 0
                     },
-                    "pc": 1265,
+                    "pc": 1276,
                     "value": "[cast(fp + (-4), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 74,
+                        "group": 76,
                         "offset": 118
                     },
-                    "pc": 1271,
+                    "pc": 1282,
                     "value": "[cast(ap + (-5), felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 74,
+                        "group": 76,
                         "offset": 118
                     },
-                    "pc": 1271,
+                    "pc": 1282,
                     "value": "[cast(ap + (-4), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 74,
+                        "group": 76,
                         "offset": 118
                     },
-                    "pc": 1271,
+                    "pc": 1282,
                     "value": "[cast(ap + (-3), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 74,
+                        "group": 76,
                         "offset": 118
                     },
-                    "pc": 1271,
+                    "pc": 1282,
                     "value": "[cast(ap + (-2), starkware.cairo.common.uint256.Uint256*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 75,
+                        "group": 77,
                         "offset": 0
                     },
-                    "pc": 1272,
+                    "pc": 1283,
                     "value": "[cast(fp + (-5), (score: starkware.cairo.common.uint256.Uint256)*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 75,
+                        "group": 77,
                         "offset": 0
                     },
-                    "pc": 1272,
+                    "pc": 1283,
                     "value": "[cast(fp + (-3), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 75,
+                        "group": 77,
                         "offset": 1
                     },
-                    "pc": 1274,
+                    "pc": 1285,
                     "value": "[cast(fp, felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 75,
+                        "group": 77,
                         "offset": 1
                     },
-                    "pc": 1274,
+                    "pc": 1285,
                     "value": "[cast(fp, felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 75,
+                        "group": 77,
                         "offset": 1
                     },
-                    "pc": 1274,
+                    "pc": 1285,
                     "value": "cast(fp + (-5), felt*)"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 75,
+                        "group": 77,
                         "offset": 1
                     },
-                    "pc": 1276,
+                    "pc": 1287,
                     "value": "cast([fp] + 2, felt*)"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 75,
+                        "group": 77,
                         "offset": 2
                     },
-                    "pc": 1278,
+                    "pc": 1289,
                     "value": "[cast(ap + (-1), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 76,
+                        "group": 78,
                         "offset": 0
                     },
-                    "pc": 1282,
+                    "pc": 1293,
                     "value": "[cast([fp + (-5)], felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 76,
+                        "group": 78,
                         "offset": 0
                     },
-                    "pc": 1282,
+                    "pc": 1293,
                     "value": "[cast([fp + (-5)] + 1, starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 76,
+                        "group": 78,
                         "offset": 0
                     },
-                    "pc": 1282,
+                    "pc": 1293,
                     "value": "[cast([fp + (-5)] + 2, felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 76,
+                        "group": 78,
                         "offset": 0
                     },
-                    "pc": 1282,
+                    "pc": 1293,
                     "value": "[cast(fp + (-3), felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 76,
+                        "group": 78,
                         "offset": 0
                     },
-                    "pc": 1282,
+                    "pc": 1293,
                     "value": "[cast([fp + (-3)], felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 76,
+                        "group": 78,
                         "offset": 0
                     },
-                    "pc": 1282,
+                    "pc": 1293,
                     "value": "cast([fp + (-3)] + 1, felt*)"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 76,
+                        "group": 78,
                         "offset": 0
                     },
-                    "pc": 1282,
+                    "pc": 1293,
                     "value": "cast([fp + (-3)] + 1 - [fp + (-3)], felt)"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 76,
+                        "group": 78,
                         "offset": 1
                     },
-                    "pc": 1284,
+                    "pc": 1295,
                     "value": "[cast(ap + (-1), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 76,
+                        "group": 78,
                         "offset": 125
                     },
-                    "pc": 1291,
+                    "pc": 1302,
                     "value": "[cast(ap + (-5), felt**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 76,
+                        "group": 78,
                         "offset": 125
                     },
-                    "pc": 1291,
+                    "pc": 1302,
                     "value": "[cast(ap + (-4), starkware.cairo.common.cairo_builtins.HashBuiltin**)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 76,
+                        "group": 78,
                         "offset": 125
                     },
-                    "pc": 1291,
+                    "pc": 1302,
                     "value": "[cast(ap + (-3), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 76,
+                        "group": 78,
                         "offset": 125
                     },
-                    "pc": 1291,
+                    "pc": 1302,
                     "value": "[cast(ap + (-2), (score: starkware.cairo.common.uint256.Uint256)*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 76,
+                        "group": 78,
                         "offset": 133
                     },
-                    "pc": 1294,
+                    "pc": 1305,
                     "value": "[cast(ap + (-3), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 76,
+                        "group": 78,
                         "offset": 133
                     },
-                    "pc": 1294,
+                    "pc": 1305,
                     "value": "[cast(ap + (-2), felt*)]"
                 },
                 {
                     "ap_tracking_data": {
-                        "group": 76,
+                        "group": 78,
                         "offset": 133
                     },
-                    "pc": 1294,
+                    "pc": 1305,
                     "value": "[cast(ap + (-1), felt**)]"
                 }
             ]

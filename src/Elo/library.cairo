@@ -125,10 +125,21 @@ func _getExpectedScore{syscall_ptr: felt*, pedersen_ptr: HashBuiltin*, range_che
     return (expectedScore,);
 }
 
+
 func _getNewScore{syscall_ptr: felt*, pedersen_ptr: HashBuiltin*, range_check_ptr}(
     current_player_Score: Uint256, K_factor: felt, player_Result: felt, expected_change: felt
 ) -> (newScore_uint: Uint256) {
-    let newScore = Math64x61.add(Math64x61.fromUint256(current_player_Score),Math64x61.mul(Math64x61.fromFelt(K_factor),Math64x61.sub(player_Result, expected_change)));
+    let (scoreVariation) = _getScoreVariation(K_factor, player_Result, expected_change);
+    let newScore = Math64x61.add(Math64x61.fromUint256(current_player_Score),scoreVariation);
     let newScore_uint = Math64x61.toUint256(Math64x61.toFelt(newScore));
     return(newScore_uint,);
+}
+
+// The score to add to the current player Score follow this curve:
+// https://www.desmos.com/calculator/axxtuwwthm?lang=fr
+func _getScoreVariation{syscall_ptr: felt*, pedersen_ptr: HashBuiltin*, range_check_ptr}(
+     K_factor: felt, player_Result: felt, expected_change: felt
+) -> (scoreVariation: felt) {
+    let scoreVariation = Math64x61.mul(Math64x61.fromFelt(K_factor),Math64x61.sub(player_Result, expected_change));
+    return (scoreVariation,);
 }
