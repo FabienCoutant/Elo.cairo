@@ -55,7 +55,6 @@ namespace ELO {
         playerA_Address: felt, playerB_Address: felt, winner_Address: felt
     ) -> () {
         alloc_locals;
-
         let (playerA_Score) = getScore(playerA_Address);
         let (playerB_Score) = getScore(playerB_Address);
 
@@ -120,7 +119,7 @@ func _getExpectedScore{syscall_ptr: felt*, pedersen_ptr: HashBuiltin*, range_che
     let valueDiff = Math64x61.sub(Math64x61.fromUint256(otherPlayerScore),Math64x61.fromUint256(playerScore));
     let abs_diff = abs_value(valueDiff);
     let diff_sign = sign(valueDiff);
-    let powValue = Math64x61.pow(Math64x61.fromFelt(10),Math64x61.div(Math64x61.fromFelt(abs_diff),Math64x61.fromFelt(400))*diff_sign);
+    let powValue = Math64x61.pow(Math64x61.fromFelt(10),Math64x61.div(abs_diff,Math64x61.fromFelt(400))*diff_sign);
     let expectedScore = Math64x61.div(Math64x61.fromFelt(1),Math64x61.add(Math64x61.fromFelt(1),powValue));
     return (expectedScore,);
 }
