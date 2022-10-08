@@ -15,7 +15,7 @@
     "url": "git+https://github.com/FabienCoutant/Elo.cairo.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/FabienCoutant/Elo.cairo/issues"
   },
